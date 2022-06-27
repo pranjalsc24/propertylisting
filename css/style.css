@@ -1,0 +1,467 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: #f69314;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1rem;
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+button.round-button {
+  background: #f69314;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+p.large-paragraph {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+
+
+
+/* HEADER SECTION */
+
+#main-container{
+    min-height: 600px;
+    height: calc(100vh);
+    position: relative;
+  }
+
+header {
+    background: transparent;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+#logo {
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  top: 4px;
+}
+
+
+.button1 {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 3px 5px;
+  width: 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: none;
+}
+
+.button1 .span1{
+  display: block;
+  height: 1px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+header ul {
+  list-style-type: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header ul li a {
+  color: rgb(18, 17, 17);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header ul li a:hover{
+  color: #f69314;
+}
+
+header ul.is-sticky li a {
+  color: #000;
+}
+
+
+/* HERO SECTION */
+#hero-section {
+  
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#hero-section .light {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.bg {
+  opacity: 0.6;
+}
+
+#hero-section .hero-text {
+  position: absolute;
+  top: 50%;
+  margin: -75px auto 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color:rgb(59, 57, 57);
+  width: 500px;
+  text-align: center;
+}
+
+#hero-section .hero-text p {
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 1rem;
+  color: black;
+}
+
+
+
+/* PROPERTIES */
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 210px;
+  
+}
+
+div.gallery:hover {
+  border: 1px solid rgb(44, 43, 43);
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.desc span {
+  font-size: 0.8rem;
+  padding:2px;
+}
+
+desc span.baths {
+  padding-left: 8px;
+}
+
+.desc span.sqft {
+  padding-right: 0;
+  padding-left: 8px;
+}
+
+.desc span.beds,
+.desc span.baths {
+  border-right: 1px solid #888;
+}
+
+.desc address {
+  font-size: 0.8rem;
+  font-style: normal;
+  margin-top: 0.5rem;
+}
+
+.gallery  img{
+  width: 100%;
+  display: block;
+}
+
+
+
+/* AGENTS */
+#agents {
+  margin: 4rem 0 6rem;
+  padding: 0 0 6rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#agents p.large-paragraph {
+  width: 50%;
+  margin-bottom: 4rem;
+}
+
+#agents .flex {
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+#agents .card {
+  width: 32%;
+  background: #f0f0f0;
+  margin-bottom: 2rem;
+}
+
+#agents .card img {
+  width: 100%;
+}
+
+#agents .card h3 {
+  font-family: "Playfair Display", serif;
+  color: #000;
+}
+
+#agents .card h3,
+#agents .card p {
+  padding-left: 1rem;
+}
+
+
+/* ABOUT SECTION */
+#best {
+  margin: 2rem 0;
+}
+
+#best .flex > img {
+  width: 47%;
+}
+
+#best .flex > div {
+  width: 40%;
+}
+
+#best ul {
+  padding-left: 20px;
+  margin-bottom: 4rem;
+}
+
+
+
+
+/* CONTACT */
+
+#contact {
+  background: #f8f9fa;
+  padding: 4rem 0 8rem;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+#form-container {
+  width: 58%;
+  background: #fff;
+  padding: 3rem;
+  box-sizing: border-box;
+  height: 0%;
+}
+
+#form-container h3 {
+  color: #000;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 2rem;
+}
+
+#form-container label {
+  display: block;
+  color: #000;
+  margin-top: 1rem;
+}
+
+#form-container input,
+#form-container textarea {
+  display: block;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  width: 100%;
+  box-sizing: border-box;
+  height: 43px;
+  font-family: "Roboto", "Helvetica", "Sans-serif";
+  font-size: 1rem;
+  color: #495057;
+}
+
+#form-container textarea {
+  height: 170px;
+  margin-bottom: 2rem;
+  resize: none;
+}
+
+#address-container {
+  width: 38%;
+  background: #fff;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  height: 0%;
+}
+
+#address-container label {
+  font-weight: 700;
+  display: block;
+  margin-top: 2rem;
+}
+
+#address-container label:first-child {
+  margin-top: 0;
+}
+
+#address-container address {
+  margin-bottom: 1.5rem;
+  font-style: normal;
+}
+
+#address-container a {
+  text-decoration: none;
+  color: #f69314;
+}
+
+#address-container a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* FOOTER */
+footer {
+  background: #333;
+  padding: 8rem 0;
+}
+
+footer h5 {
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+footer .footer-about {
+  width: 47%;
+}
+
+footer .footer-about p {
+  width: 65%;
+}
+
+footer .footer-quick {
+  width: 16%;
+}
+
+footer .footer-quick ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-quick ul li {
+  margin: 10px 0;
+}
+
+footer .footer-quick ul li a {
+  color: #777;
+  text-decoration: none;
+}
+
+footer .footer-quick ul li a:hover {
+  color: #fff;
+}
+
+footer .footer-follow {
+  width: 35%;
+}
+
+
+footer .footer-follow ul li {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+footer .footer-follow ul li a {
+  text-decoration: none;
+  color: #777;
+}
+
+footer .footer-follow ul li a:hover {
+  color: orange;
+}
+
+
+
+
